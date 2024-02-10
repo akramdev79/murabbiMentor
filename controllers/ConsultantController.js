@@ -1,6 +1,6 @@
 import cloudinary from '../config/cloudinary.js';
 import path from 'path';
-const { PrismaClient } = require('@prisma/client');
+import  PrismaClient from'@prisma/client';
 const prisma = new PrismaClient()
 export const registerConsultant = async (req, res) =>{
 
