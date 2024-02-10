@@ -4,6 +4,9 @@
   "description": "Murabbi mentor web app",
   "main": "app.js",
   "type": "module",
+  "engines": {
+    "node":"v=20.10"
+  },
   "scripts": {
     "start": "nodemon app.js"
   },
