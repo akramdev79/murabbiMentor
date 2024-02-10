@@ -8,7 +8,7 @@
     "node":"v=20.10"
   },
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "akramdev79",
