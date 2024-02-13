@@ -9,9 +9,9 @@ import { registerConsultant, deleteConsultants, getConsultant, updateConsultant 
 import { getConsultants } from '../controllers/ConsultantController.js'
 
 consultantRouter.get('/get-consultants', getConsultants);
-consultantRouter.post('/create-consultant', verifyToken, upload.single('image'), registerConsultant);
-consultantRouter.post('/update-consultant/:id', verifyToken, upload.single('image'),updateConsultant);
-consultantRouter.delete('/delete-consultant/:id', verifyToken, deleteConsultants);
+consultantRouter.post('/create-consultant', upload.single('image'), registerConsultant);
+consultantRouter.post('/update-consultant/:id', upload.single('image'),updateConsultant);
+consultantRouter.delete('/delete-consultant/:id', deleteConsultants);
 consultantRouter.get('/get-consultant/:id',getConsultant);
 
 export default consultantRouter
