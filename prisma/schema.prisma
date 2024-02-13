@@ -22,8 +22,8 @@ model User {
 
 model Customers {
   id Int @id @default(autoincrement())
-  fullname String   
-  email String?   
+  fullname String
+  email String?
   phone Int
   address String?
   createdAt DateTime @default(now())
@@ -40,7 +40,7 @@ model consultants {
   workExperience String
   phone Int
   address String
-  image String 
+  image String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
